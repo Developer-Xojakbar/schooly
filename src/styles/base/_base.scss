@@ -1,0 +1,15 @@
+// Base Settings
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: $color-black-normal;
+    height: 100vh;
+}
