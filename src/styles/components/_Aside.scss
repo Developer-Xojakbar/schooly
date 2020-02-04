@@ -1,0 +1,59 @@
+.aside {
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 0 2pt 304pt 20pt rgba(77 , 105 , 218 , 0.08);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 68pt 
+    45pt 
+    repeat(4 , 52pt)
+    45pt
+    repeat(5 , 52pt) 
+    45pt 
+    repeat(3 , 52pt)
+    193pt;
+    grid-row-gap: 5pt;
+    grid-area: 1 / 1 / 3 / 2;
+    border-top-right-radius: 40pt;
+    border-bottom-right-radius: 40pt;
+    background-color: white;
+    text-align: left;
+
+    .context {
+        opacity: 44%;
+        font-family: ProximaNovaSemiBold;
+        letter-spacing: 0.86pt;
+        color: $color-gray-aside;
+        margin-left: 20pt;
+    }
+
+    &__logo {
+        @extend .context;
+        font-size: 29.76pt;
+    }
+
+    > p {
+        @extend .context;
+        font-size: 12pt;
+        text-transform: uppercase; 
+    }
+
+    &__side-menu {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 64pt 1fr;
+        grid-template-rows: 52pt;
+        width: 250pt;
+
+        > .icon {
+            justify-self: center;
+        }
+
+        > p {
+            font-family: ProximaNovaSemiBold;
+            font-size: 14pt;
+            letter-spacing: 0.1pt;
+            color: rgb(23 , 23 , 37);
+        }
+    }
+}
