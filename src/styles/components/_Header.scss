@@ -1,0 +1,118 @@
+.header {
+    @extend .right-section;
+    display: grid;
+    grid-template-columns: 38pt 930pt 264pt;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20pt;
+    align-items: center;
+
+    &__menu-icon {
+        align-content: space-evenly;
+        display: grid;
+        box-sizing: border-box;
+        width: 38pt;
+        height: 38pt;
+        border-radius: 10pt;
+        background-color: white;
+        padding: 9pt;
+
+        > span {
+            display: grid;
+            height: 3pt;
+            border-radius: 1.5pt;
+            background-color: rgb(146 , 146 , 157);
+        }
+    }
+
+    &__menu-name {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        grid-template-rows: repeat(2 , max-content);
+        grid-row-gap: 1pt;
+
+        > p:nth-of-type(1) {
+            grid-area: 1 / 1;
+            font-family: $font-light;
+            font-size: 12pt;
+            letter-spacing: 0.05pt;
+            color: rgb(146 , 146 , 157);
+        }
+
+        > p:nth-of-type(2) {
+            grid-area: 2 / 1;
+            font-family: $font-bold;
+            font-size: 28pt;
+            letter-spacing: 0.12pt;
+            color: rgb(19 , 19 , 53);
+        }
+    }
+
+
+
+    &__switch-catalog {
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: 38pt;
+        align-items: center;
+        justify-items: center;
+        border-radius: 8pt;
+        background-color: white;
+
+        .context {
+            font-family: $font-semi-bold;
+            font-size: 14pt;
+            line-height: 24pt;
+            letter-spacing: 0.1pt;
+        }
+
+        // this "active" class is error
+        > .active {
+            display: inline-block;
+            z-index: 100;
+            overflow: hidden;
+            width: 130pt;
+            height: 34pt;
+            grid-area: 1 / 1 / 2 / 2;
+            border-radius: 8pt;
+            background-color: $color-bright-blue;
+
+            > .container {
+                height: inherit;
+                width: 262pt;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+
+                > p:nth-of-type(1) {
+                    @extend .context;
+                    float: left;
+                    display: inline-block;
+                    width: 130pt;
+                    color: white;
+                }
+        
+                > p:nth-of-type(2) {
+                    @extend .context;
+                    float: right;
+                    display: inline-block;
+                    width: 130pt;
+                    color: white;
+                } 
+            }
+        }
+
+        > p:nth-of-type(1) {
+            @extend .context;
+            grid-area: 1 / 1;
+            color: color-gray-normal;
+        }
+
+        > p:nth-of-type(2) {
+            @extend .context;
+            grid-area: 1 / 2;
+            color: color-gray-normal;
+        }
+    }
+}
