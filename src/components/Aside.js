@@ -6,7 +6,7 @@ const Aside = () => {
         <div className="aside">
             <h1 className="aside__logo">schooly</h1>
             <p>Class Management</p>
-            <div className="aside__side-menu">
+            <div className="aside__side-menu active">
                 <IconSVG className="" iconName="icon-attendance" />
                 <p>Attendance</p>
             </div>

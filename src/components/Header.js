@@ -13,15 +13,8 @@ const Header = () => {
                 <p>Attendance</p>
             </div>
             <div className="header__switch-catalog">
-                {/*this "active" class is error */}
-                <div className="active">
-                    <div className="container">
-                        <p>Take attendance</p>
-                        <p>Attendance report</p>
-                    </div>
-                </div>
-                <p>Take attendance</p>
-                <p>Attendance report</p>
+                <p className="active">Take attendance</p>
+                <p >Attendance report</p>
             </div>
         </div>
     );

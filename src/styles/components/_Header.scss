@@ -51,7 +51,6 @@
 
     &__switch-catalog {
         display: grid;
-        position: relative;
         grid-template-columns: repeat(2 , 1fr);
         grid-template-rows: 38pt;
         align-items: center;
@@ -66,53 +65,27 @@
             letter-spacing: 0.1pt;
         }
 
-        // this "active" class is error
-        > .active {
-            display: inline-block;
-            z-index: 100;
-            overflow: hidden;
-            width: 130pt;
-            height: 34pt;
-            grid-area: 1 / 1 / 2 / 2;
+        > p:nth-of-type(n).active {
+            display: grid;
             border-radius: 8pt;
             background-color: $color-bright-blue;
-
-            > .container {
-                height: inherit;
-                width: 262pt;
-                text-align: center;
-                align-items: center;
-                display: flex;
-                justify-content: space-between;
-
-                > p:nth-of-type(1) {
-                    @extend .context;
-                    float: left;
-                    display: inline-block;
-                    width: 130pt;
-                    color: white;
-                }
-        
-                > p:nth-of-type(2) {
-                    @extend .context;
-                    float: right;
-                    display: inline-block;
-                    width: 130pt;
-                    color: white;
-                } 
-            }
+            color: white;
+            width: 130pt;
+            height: 34pt;
+            align-content: center;
+            justify-content: center;
         }
 
         > p:nth-of-type(1) {
             @extend .context;
             grid-area: 1 / 1;
-            color: color-gray-normal;
+            color: $color-gray-normal;
         }
 
         > p:nth-of-type(2) {
             @extend .context;
             grid-area: 1 / 2;
-            color: color-gray-normal;
+            color: $color-gray-normal;
         }
     }
 }

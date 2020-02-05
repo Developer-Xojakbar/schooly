@@ -4,8 +4,8 @@
     box-shadow: 0 2pt 304pt 20pt rgba(77 , 105 , 218 , 0.08);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 68pt 
-    45pt 
+    grid-template-rows: 86.8pt 
+    26.4pt 
     repeat(4 , 52pt)
     45pt
     repeat(5 , 52pt) 
@@ -29,13 +29,15 @@
 
     &__logo {
         @extend .context;
-        font-size: 29.76pt;
+        font-size: 43pt;
     }
 
     > p {
         @extend .context;
         font-size: 12pt;
         text-transform: uppercase; 
+        align-self: end;
+        margin-bottom: 5pt;
     }
 
     &__side-menu {
@@ -55,5 +57,15 @@
             letter-spacing: 0.1pt;
             color: rgb(23 , 23 , 37);
         }
+    }
+
+    > .active {
+        > .icon {
+            fill: $color-vibrant-blue;
+        }
+
+        > p {
+            color: rgb(27 , 57 , 255);
+        } 
     }
 }
