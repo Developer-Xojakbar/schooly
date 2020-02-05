@@ -15,11 +15,14 @@ const Main = () => {
                     <p className="search"><IconSVG className="" iconName="icon-" />Search by Name, Group...</p>
                 </div>
                 <div className="main__panel-info">
-                    
+                    <span type="checkbox">&#10004;</span>
+                    <p>Student Name</p>
+                    <p>Group Name</p>
+                    <p>Status</p>
                 </div>
             </div>
             <div className="main__items">
-
+                
             </div>
             <div className="main__chart">
 

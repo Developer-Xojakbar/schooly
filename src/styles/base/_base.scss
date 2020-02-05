@@ -27,3 +27,24 @@ body {
     width: 1270pt;
     justify-self: center;
 }
+
+span[type="checkbox"] {
+    display: grid;
+    width: 24pt;
+    height: 24pt;
+    box-sizing: border-box;
+    padding: 2pt;
+    border: solid 2pt rgb(181 , 181 , 190);
+    border-radius: 5pt;
+    background-color: white;
+    align-content: center;
+    justify-content: center;
+    color: rgba( 0 , 0 , 0 , 0);
+    font-size: 15pt;
+}
+
+span[type="checkbox"].checked{
+    border: none;
+    background-color: rgb(107 , 230 , 148);
+    color: white;
+}
