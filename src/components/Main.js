@@ -1,6 +1,6 @@
 import React from 'react';
 import DonutChart from '../plugins/DonutChart';
-import koala from '../images/koala.jpg';
+// import koala from '../images/koala.jpg';
 import IconSVG from './IconSVG';
 
 const Main = () => {
