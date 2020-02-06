@@ -1,5 +1,6 @@
 import React from 'react';
 import DonutChart from '../plugins/DonutChart';
+import koala from '../images/koala.jpg';
 import IconSVG from './IconSVG';
 
 const Main = () => {
@@ -26,7 +27,7 @@ const Main = () => {
                 <div className="item checked">
                     <span type="checkbox">&#10004;</span>
                     <div className="image">
-                        <img src={require("../images/koala.jpg")} alt="koala" />
+                        <img src={koala} alt="koala" />
                     </div>
                     <p className="context">Abdullayev Alisher aka</p>
                     <p className="context">Advanced English</p>
@@ -35,7 +36,7 @@ const Main = () => {
                 <div className="item">
                     <span type="checkbox">&#10004;</span>
                     <div className="image">
-                        <img src={require("../images/koala.jpg")} alt="koala" />
+                        <img src={koala} alt="koala" />
                     </div>
                     <p className="context">Abdullayev Alisher aka</p>
                     <p className="context">IELTS</p>
@@ -44,7 +45,7 @@ const Main = () => {
                 <div className="item">
                     <span type="checkbox">&#10004;</span>
                     <div className="image">
-                        <img src={require("../images/koala.jpg")} alt="koala" />
+                        <img src={koala} alt="koala" />
                     </div>
                     <p className="context">Abdullayev Alisher aka</p>
                     <p className="context">intermediate english</p>
