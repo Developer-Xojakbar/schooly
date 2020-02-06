@@ -26,27 +26,21 @@ const Main = () => {
             <div className="main__items">
                 <div className="item checked">
                     <span type="checkbox">&#10004;</span>
-                    <div className="image">
-                        {/* <img src={koala} alt="koala" /> */}
-                    </div>
+                    <div className="image"></div>
                     <p className="context">Abdullayev Alisher aka</p>
                     <p className="context">Advanced English</p>
                     <p className="status absent">Absent</p>
                 </div>
                 <div className="item">
                     <span type="checkbox">&#10004;</span>
-                    <div className="image">
-                        {/* <img src={koala} alt="koala" /> */}
-                    </div>
+                    <div className="image"></div>
                     <p className="context">Abdullayev Alisher aka</p>
                     <p className="context">IELTS</p>
                     <p className="status present">Present</p>
                 </div>
                 <div className="item">
                     <span type="checkbox">&#10004;</span>
-                    <div className="image">
-                        {/* <img src={koala} alt="koala" /> */}
-                    </div>
+                    <div className="image"></div>
                     <p className="context">Abdullayev Alisher aka</p>
                     <p className="context">intermediate english</p>
                     <p className="status absent-excused">Absent Excused</p>
