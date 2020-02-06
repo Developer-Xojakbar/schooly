@@ -45,6 +45,6 @@ span[type="checkbox"] {
 
 span[type="checkbox"].checked{
     border: none;
-    background-color: rgb(107 , 230 , 148);
+    background-color: $color-weird-green;
     color: white;
 }
