@@ -27,7 +27,7 @@ const Main = () => {
                 <div className="item checked">
                     <span type="checkbox">&#10004;</span>
                     <div className="image">
-                        <img src={koala} alt="koala" />
+                        {/* <img src={koala} alt="koala" /> */}
                     </div>
                     <p className="context">Abdullayev Alisher aka</p>
                     <p className="context">Advanced English</p>
@@ -36,7 +36,7 @@ const Main = () => {
                 <div className="item">
                     <span type="checkbox">&#10004;</span>
                     <div className="image">
-                        <img src={koala} alt="koala" />
+                        {/* <img src={koala} alt="koala" /> */}
                     </div>
                     <p className="context">Abdullayev Alisher aka</p>
                     <p className="context">IELTS</p>
@@ -45,7 +45,7 @@ const Main = () => {
                 <div className="item">
                     <span type="checkbox">&#10004;</span>
                     <div className="image">
-                        <img src={koala} alt="koala" />
+                        {/* <img src={koala} alt="koala" /> */}
                     </div>
                     <p className="context">Abdullayev Alisher aka</p>
                     <p className="context">intermediate english</p>
