@@ -13,7 +13,7 @@ const Main = () => {
                     </div>
                     <p className="select">Select student</p>
                     <p className="date-time"><IconSVG className="" iconName="icon-schedule" />19 Jan 2020</p>
-                    <p className="search"><IconSVG className="" iconName="icon-" />Search by Name, Group...</p>
+                    <p className="search"><IconSVG className="" iconName="icon-search" />Search by Name, Group...</p>
                 </div>
                 <div className="main__panel-info">
                     <span type="checkbox">&#10004;</span>
@@ -26,7 +26,7 @@ const Main = () => {
                 <div className="item checked">
                     <span type="checkbox">&#10004;</span>
                     <div className="image">
-                        <img src={require("../images/Koala.jpg")} alt="Koala" />
+                        <img src={require("../images/koala.jpg")} alt="koala" />
                     </div>
                     <p className="context">Abdullayev Alisher aka</p>
                     <p className="context">Advanced English</p>
@@ -35,7 +35,7 @@ const Main = () => {
                 <div className="item">
                     <span type="checkbox">&#10004;</span>
                     <div className="image">
-                        <img src={require("../images/Koala.jpg")} alt="Koala" />
+                        <img src={require("../images/koala.jpg")} alt="koala" />
                     </div>
                     <p className="context">Abdullayev Alisher aka</p>
                     <p className="context">IELTS</p>
@@ -44,7 +44,7 @@ const Main = () => {
                 <div className="item">
                     <span type="checkbox">&#10004;</span>
                     <div className="image">
-                        <img src={require("../images/Koala.jpg")} alt="Koala" />
+                        <img src={require("../images/koala.jpg")} alt="koala" />
                     </div>
                     <p className="context">Abdullayev Alisher aka</p>
                     <p className="context">intermediate english</p>

@@ -23,10 +23,20 @@ body {
     height: 100%;
 }
 
+/*********************Extends**********************/
 .right-section {
     width: 1270pt;
     justify-self: center;
 }
+
+.text-style-semi-bold-14 {
+    font-family: $font-semi-bold;
+    font-size: 14pt;
+    letter-spacing: 0.1pt;
+    color: $color-black-switch;
+}
+/**************************************************/
+
 
 span[type="checkbox"] {
     display: grid;

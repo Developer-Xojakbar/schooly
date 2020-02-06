@@ -3,7 +3,7 @@ import IconSVG from './IconSVG';
 
 const Aside = () => {
     return (
-        <div className="aside">
+        <div className="aside active"> {/* <-- Please remove active for "scheme_new copy"*/}
             <h1 className="aside__logo">schooly</h1>
             <p>Class Management</p>
             <div className="aside__side-menu active">
@@ -36,7 +36,7 @@ const Aside = () => {
                 <p>Grade Book</p>
             </div>
             <div className="aside__side-menu">
-                <img className="icon" src={require("../images/materials.png")} alt="Materials" />
+                <IconSVG className="" iconName="icon-materials" />
                 <p>Materials</p>
             </div>
             <div className="aside__side-menu">

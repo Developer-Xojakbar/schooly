@@ -13,7 +13,7 @@ const DonutChart = ({ outerRadius, innerRadius , content , chartsData}) => {
                     let clasname = index === 0 ? "text-0" : "text-1";
             
                     return (
-                        <p className={clasname}>{context}</p>
+                        <p key={index} className={clasname}>{context}</p>
                     )
                 })}
             </div>

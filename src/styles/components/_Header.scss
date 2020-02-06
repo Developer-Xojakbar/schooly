@@ -63,9 +63,10 @@
             font-size: 14pt;
             line-height: 24pt;
             letter-spacing: 0.1pt;
+            color: $color-gray-normal;
         }
 
-        > p:nth-of-type(n).active {
+        > p.active {
             display: grid;
             border-radius: 8pt;
             background-color: $color-bright-blue;
@@ -78,14 +79,12 @@
 
         > p:nth-of-type(1) {
             @extend .context;
-            grid-area: 1 / 1;
-            color: $color-gray-normal;
+            grid-column: 1;
         }
 
         > p:nth-of-type(2) {
             @extend .context;
-            grid-area: 1 / 2;
-            color: $color-gray-normal;
+            grid-column: 2;
         }
     }
 }

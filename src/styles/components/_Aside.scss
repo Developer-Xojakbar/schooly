@@ -3,7 +3,7 @@
     align-items: center;
     box-shadow: 0 2pt 304pt 20pt rgba(77 , 105 , 218 , 0.08);
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 64pt;
     grid-template-rows: 86.8pt 
     26.4pt 
     repeat(4 , 52pt)
@@ -20,8 +20,8 @@
     text-align: left;
 
     .context {
-        opacity: 44%;
-        font-family: ProximaNovaSemiBold;
+        opacity: 0;
+        font-family: $font-semi-bold;
         letter-spacing: 0.86pt;
         color: $color-gray-aside;
         margin-left: 20pt;
@@ -45,17 +45,14 @@
         display: grid;
         grid-template-columns: 64pt 1fr;
         grid-template-rows: 52pt;
-        width: 250pt;
+        width: 64pt;
 
         > .icon {
             justify-self: center;
         }
 
         > p {
-            font-family: ProximaNovaSemiBold;
-            font-size: 14pt;
-            letter-spacing: 0.1pt;
-            color: rgb(23 , 23 , 37);
+            @extend .text-style-semi-bold-14;
         }
     }
 
@@ -67,5 +64,21 @@
         > p {
             color: rgb(27 , 57 , 255);
         } 
+    }
+}
+
+.aside.active {
+    grid-template-columns: 1fr;
+
+    > .aside__side-menu {
+        width: 250pt;
+    }
+
+    > h1 {
+        opacity: 44%;
+    }
+
+    > p {
+        opacity: 44%;
     }
 }
